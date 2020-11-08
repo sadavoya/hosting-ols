@@ -12,6 +12,14 @@ export default class Site extends Component {
         <a href={github} className="ml-auto">
           Github
         </a>
+        {info &&
+          info.map((detail, index) => {
+            return (
+              <h6 key={index} className="small">
+                {detail}
+              </h6>
+            );
+          })}
       </div>
     );
   }
