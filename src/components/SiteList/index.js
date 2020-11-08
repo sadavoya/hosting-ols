@@ -12,7 +12,7 @@ export default class SiteList extends Component {
     let rows = [],
       row = [];
 
-    sites.map((site, index) => {
+    sites.forEach((site, index) => {
       if (index % rowLength === 0) {
         if (row.length > 0) {
           rows = addRow(row, rows);
