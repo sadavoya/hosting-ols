@@ -35,11 +35,11 @@ export default class SiteList extends Component {
         <h3 className="text-capitalize text-center">site list</h3>
         {siteRows.map((row, rowIndex) => {
           return (
-            <div className="row">
+            <div key={rowIndex} className="row">
               {row.map((site) => {
                 return (
-                  <div className={columnDefinitions}>
-                    <Site key={site.id} site={site} />
+                  <div key={site.id} className={columnDefinitions}>
+                    <Site site={site} />
                   </div>
                 );
               })}
