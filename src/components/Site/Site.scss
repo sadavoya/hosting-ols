@@ -1,0 +1,25 @@
+@import '../../index.scss';
+
+.card.card-body {
+    text-transform: capitalize;
+}
+
+.site-info {
+    padding: 1rem 0.5rem;
+    font-size: 0.63rem !important;
+
+
+    ul>li>h5,
+    h5 {
+        text-transform: capitalize;
+        color: $mainBlack;
+        font-size: 0.63rem;
+
+        span {
+            color: $mainGreen;
+            margin: 0.5rem;
+            cursor: pointer;
+        }
+
+    }
+}
