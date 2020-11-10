@@ -37,26 +37,24 @@ export default class Site extends Component {
             </h5>
           )}
           {this.state.showInfo && this.hasInfoOrGithub() && (
-            <>
-              <ul>
-                {info.map((detail, index) => {
-                  return (
-                    detail && (
-                      <li key={index}>
-                        <h5>{detail}</h5>
-                      </li>
-                    )
-                  );
-                })}
-                {this.hasGithub() && (
-                  <li>
-                    <a href={github} className="ml-auto">
-                      Github
-                    </a>
-                  </li>
-                )}
-              </ul>
-            </>
+            <ul>
+              {info.map((detail, index) => {
+                return (
+                  detail && (
+                    <li key={index}>
+                      <h5>{detail}</h5>
+                    </li>
+                  )
+                );
+              })}
+              {this.hasGithub() && (
+                <li>
+                  <a href={github} className="ml-auto">
+                    Github
+                  </a>
+                </li>
+              )}
+            </ul>
           )}
         </div>
       </div>
