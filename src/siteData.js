@@ -26,4 +26,12 @@ export const siteData = [
     ],
     github: "https://github.com/sadavoya/react-github-users",
   },
+  {
+    id: 4,
+    name: "ecommerce",
+    img: "./img/ecommerce.png",
+    url: "https://react-city-tours-ols.netlify.app/",
+    info: [""],
+    github: "",
+  },
 ];
