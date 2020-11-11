@@ -29,7 +29,7 @@ export default class SiteList extends Component {
     const { sites } = this.state;
     const rowLength = 6;
     const siteRows = this.getSiteRows(sites, rowLength);
-    const columnDefinitions = "col-lg-2 col-md-6 col-sm-8";
+    const columnDefinitions = "col-lg-4 col-md-6 col-sm-8";
     return (
       <>
         <h3 className="text-capitalize text-center">site list</h3>
